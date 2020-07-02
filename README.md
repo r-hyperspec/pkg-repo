@@ -10,4 +10,7 @@ If you want to install a package, simply do the following:
 install.packages("package_name", repos = "https://r-hyperspec.github.io/hySpc.pkgs/")
 ```
 
-You can visit this [page](https://r-hyperspec.github.io/hySpc.pkgs/) but there's really not much to see there, just as there is not much to see here!
+Packages currently residing here:
+
+* ChemoSpecUtils_0.4.73.tar.gz (testing only)
+* Coming soon!
