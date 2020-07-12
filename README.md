@@ -12,5 +12,5 @@ install.packages("package_name", repos = "https://r-hyperspec.github.io/hySpc.pk
 
 Packages currently residing here:
 
-* ChemoSpecUtils_0.4.73.tar.gz (testing only)
-* Coming soon!
+* hySpc.read.Witec_0.0.0.0001.tar.gz
+* More coming soon!
