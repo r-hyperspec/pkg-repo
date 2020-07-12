@@ -4,13 +4,11 @@
 
 Welcome to `hySpc.pkgs`.  This is a repository holding certain packages in the `r-hyperspec` series (in particular, data-rich packages that are too large to be distributed on CRAN).
 
-If you want to install a package, simply do the following:
+If you want to install a package, simply do for example the following:
 
 ```r
-install.packages("drat") # only if not already installed
-library("drat")
-addRepo("github.com/r-hyperspec/hySpc.pkgs")
-install.packages("hySpc.read.Witec")
+install.packages("hySpc.read.Witec",
+  repos = "r-hyperspec.github.io/hySpc.pkgs/")
 ```
 
 Packages currently residing here:
