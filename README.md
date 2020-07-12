@@ -7,10 +7,13 @@ Welcome to `hySpc.pkgs`.  This is a repository holding certain packages in the `
 If you want to install a package, simply do the following:
 
 ```r
-install.packages("package_name", repos = "https://r-hyperspec.github.io/hySpc.pkgs/")
+install.packages("drat") # only if not already installed
+library("drat")
+addRepo("github.com/r-hyperspec/hySpc.pkgs")
+install.packages("hySpc.read.Witec")
 ```
 
 Packages currently residing here:
 
-* hySpc.read.Witec_0.0.0.0001.tar.gz
+* hySpc.read.Witec_0.0.0.0001.tar.gz (testing example)
 * More coming soon!
