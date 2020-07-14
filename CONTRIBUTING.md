@@ -9,8 +9,12 @@
 
 # Instructions for hyperSpec Team Members
 
-* Please keep branches `master` and `gh-pages` identical.
+* Please keep branches `master` and `gh-pages` identical.  The automatic deployment does this for you.
 * To manually deploy to this repo, follow these steps on either of those (local) branches:
   + `library("drat")`
 	+ `insertPackage(file = "path to full name of tar.gz", repodir = "point to top level of the local repo", action = "archive")`
 	+ Push the branch you are on to the `hySpc.pkgs` remote, to both the `master` and `gh-pages` branches.
+
+# Don't Forget!
+
+* No matter if you manually update or the automatic update occurs, you need to go to `README.md` on `master` and manually add the full name of the tar ball to the list of available packages (and remove any that have been archived).  There appears to be no way to make this change automatically.
