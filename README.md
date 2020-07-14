@@ -14,7 +14,7 @@ install.packages("hySpc.read.Witec",
 Packages currently residing here:
 
 * hySpc.read.Witec_0.0.0.9000.tar.gz
-* Older versions are in the `archive` directory.
+* Older versions are in the `src/contrib/archive` directory.
 
 <hr>
 
