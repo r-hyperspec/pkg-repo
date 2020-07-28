@@ -3,18 +3,15 @@
 
 * Users install from `gh-pages` which displays `index.html` while `master` displays `README.md` to the end user.
 * Instructions for end users to install are given in `README.md`.
-* Other repos (currently: `hySpc.read.Witec`) can and will automatically deploy tar balls (as `.tar.gz` archives) to this site.  When that happens, the most recent version goes into `src/contrib` and older versions go to `archive/pkg_name`.
+* Other repos (e.g. `hySpc.read.Witec`) can and will automatically deploy tar balls (as `.tar.gz` archives) to this site.  When that happens, the most recent version goes into `src/contrib` and older versions go to `archive/pkg_name`.
 * Automatic deployment is controlled by, for example `hySpc.read.Witec/.github/workflows/build_check_deploy.yaml`. Deployment is from the `master` branch.
 * Package `drat` handles deploying to `hySpc.pkgs`.  If you look at `src/contrib` you will see the tar balls, a human-readible file (`PACKAGES`) and two machine-readible files (`PACKAGES.gz` and `PACKAGES.rds`).  These are the pieces necessary for `R` to use this as a repository.  The paper in the _R Journal_ on `drat` is very useful, but it hides the simplicity in some ways. `drat` simply keeps these three ancillary files up-to-date.
 
 # Instructions for hyperSpec Team Members
 
 * Please keep branches `master` and `gh-pages` identical.  The automatic deployment does this for you.
+* If you edit `README.md` make sure that `# hySpc.pkgs` is the first line and that you don't add anything after `Packages currently residing here:`.  The automatic deploy scripts copy these lines and everything between them, then add a directory listing and then save an updated version of `README.md`.
 * To manually deploy to this repo, follow these steps on either of those (local) branches:
   + `library("drat")`
 	+ `insertPackage(file = "path to full name of tar.gz", repodir = "point to top level of the local repo", action = "archive")`
 	+ Push the branch you are on to the `hySpc.pkgs` remote, to both the `master` and `gh-pages` branches.
-
-# Don't Forget!
-
-* No matter if you manually update or the automatic update occurs, you need to go to `README.md` on `master` and manually add the full name of the tar ball to the list of available packages (and remove any that have been archived).  There appears to be no way to make this change automatically.
