@@ -7,7 +7,7 @@ Welcome to `hySpc.pkgs`.  This is a repository holding certain packages in the `
 If you want to install a package, simply do the following:
 
 ```r
-install.packages("hySpc.read.Witec",
+install.packages("hySpc.read.txt",
   repos = c("r-hyperspec.github.io/hySpc.pkgs/", getOption("repos")))
 ```
 
