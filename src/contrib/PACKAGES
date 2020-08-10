@@ -1,8 +1,0 @@
-Package: hySpc.read.Witec
-Version: 0.0.0.9000
-Depends: hyperSpec, methods
-Imports: hySpc.testthat, utils
-Suggests: R.matlab, testthat, knitr, covr
-License: MIT + file LICENSE
-MD5sum: 70d87055a51031baae5778c34153ca4d
-NeedsCompilation: no
