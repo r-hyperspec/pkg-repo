@@ -4,5 +4,9 @@ Depends: hyperSpec, methods
 Imports: hySpc.testthat, utils
 Suggests: R.matlab, testthat, knitr, covr
 License: MIT + file LICENSE
+<<<<<<< HEAD
 MD5sum: 7a145524a5eb679f681b95c89d435556
+=======
+MD5sum: dd395d60bc6c2e18030e7c105a616e50
+>>>>>>> 7aa8d6ed5165ba8b0cf9d111b4cd04026fbee8ff
 NeedsCompilation: no
