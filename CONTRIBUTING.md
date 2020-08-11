@@ -7,7 +7,7 @@
 * Automatic deployment is controlled by, for example `hySpc.read.txt/.github/workflows/build_check_deploy.yaml`. Deployment is from the `master` branch for data packages (which rarely change) and from the `develop` branch for selected other packages.
 * Package `drat` handles deploying to `hySpc.pkgs`.  If you look at `src/contrib` you will see the tar balls, a human-readible file (`PACKAGES`) and two machine-readible files (`PACKAGES.gz` and `PACKAGES.rds`).  These are the pieces necessary for `R` to use this as a repository.  The paper in the _R Journal_ on `drat` is very useful, but it hides the simplicity in some ways. `drat` simply keeps these three ancillary files up-to-date.
 
-# Instructions for hyperSpec Team Members
+# Instructions and Details for hyperSpec Team Members
 
 * Please keep branches `master` and `gh-pages` identical.  The automatic deployment does this for you.
 * If you edit `README.md` make sure that `# hySpc.pkgs` is the first line and that you don't add anything after `Packages currently residing here:`.  The automatic deploy scripts copy these lines and everything between them, then add a directory listing and then save an updated version of `README.md`.
@@ -16,6 +16,6 @@
 	+ `insertPackage(file = "path to full name of tar.gz", repodir = "point to top level of the local repo", action = "archive")`
 	+ Push the branch you are on to the `hySpc.pkgs` remote, to both the `master` and `gh-pages` branches.  It is essential that these two branches be the same or the automatic deployment fail with `git` "can't merge" issues.
 * If you need to delete a package from this repo, be careful.  The best procedure seems to be to manually remove the `tar.gz` files, then insert another package.  Although it does not seem to be documented, inserting a package will update the ancillary files, removing info about the deleted packages.  If all packages are removed, it looks like the automatic deployment will fail (I don't see quite why, and am not certain this is the cause of some behaviors I have observed).  In this case, build a file of interest in the original repo, then manually insert it as described above.  Note that the unreleased version of `drat` on Github has a new function to remove packages, but I had trouble getting it to work (which could have been my fault, there were several problems present at the same time).
-* Pulling from the remote can be problematic if automatic deployment has occurred.  Git knows the `.tar.gz` are different but of course it is not practical to resolve these things.  Sometimes you have to get it right locally and force the push.
+* Pulling from the remote can be problematic if automatic deployment has occurred.  Git knows the `.tar.gz` are different but of course it is not practical to resolve these things.  Sometimes you have to get it right locally and force the push.  If you do a pull from the remote and get messages like `warning: Cannot merge binary files:` `git merge --abort` is your friend.  I am considering git-ignoring the `.tar.gz` files to avoid these issues.
 
 Problems?  Let me know and I'll try to help!  Bryan
