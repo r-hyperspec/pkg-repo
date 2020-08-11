@@ -1,0 +1,4 @@
+# Ignore the .tar.gz files because these are changed by automatic
+# deployment and git cannot resolve binary files, meaning you cannot
+# pull from the remote
+*.tar.gz
