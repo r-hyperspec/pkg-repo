@@ -4,5 +4,5 @@ Depends: hyperSpec, methods
 Imports: hySpc.testthat, utils
 Suggests: R.matlab, testthat, knitr, covr
 License: MIT + file LICENSE
-MD5sum: fb2a247e5d7fed3e8496addc695ad494
+MD5sum: b2529bec1606c60c78fe8f382a379439
 NeedsCompilation: no
