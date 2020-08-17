@@ -13,11 +13,7 @@ install.packages("hySpc.read.txt",
 
 Packages currently residing here:
 
-* hyperSpec_0.300.0.tar.gz  (2020-08-17)
-
 * hySpc.read.txt_0.0.0.9000.tar.gz  (2020-08-17)
-
-* hyperSpec_0.100.0.tar.gz  (2020-08-17)
 
 * hySpc.read.txt_0.0.0.1000.tar.gz  (2020-08-17)
 
