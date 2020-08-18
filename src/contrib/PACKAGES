@@ -1,8 +1,8 @@
 Package: hySpc.read.txt
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Depends: hyperSpec, methods
 Imports: hySpc.testthat, utils
 Suggests: R.matlab, testthat, knitr, covr
 License: MIT + file LICENSE
-MD5sum: 8f2e20096a5bda082d08e8da6daaf60d
+MD5sum: 2338eef7166e0a1806088a32d7e7315c
 NeedsCompilation: no

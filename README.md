@@ -13,8 +13,10 @@ install.packages("hySpc.read.txt",
 
 Packages currently residing here:
 
-* hySpc.read.txt_0.0.0.9000.tar.gz  (2020-08-18)
+* hySpc.read.txt_0.0.0.9001.tar.gz  (2020-08-18)
 
 * hySpc.read.txt_0.0.0.1000.tar.gz  (2020-08-18)
 
 * hySpc.read.txt_0.0.0.2000.tar.gz  (2020-08-18)
+
+* hySpc.read.txt_0.0.0.9000.tar.gz  (2020-08-18)
