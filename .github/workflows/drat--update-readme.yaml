@@ -16,7 +16,6 @@ jobs:
       - name: Drat -- update README.md
         if: success()
         run: |
-		
            cd hyperSpec/hySpc.pkgs
            # grab the portion of the file we want to re-use
            awk '/^# hySpc\.pkgs$/, /^Packages currently residing here:$/' README.md > README.tmp
