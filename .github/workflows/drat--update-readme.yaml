@@ -1,0 +1,35 @@
+on: push
+
+name: drat-readme
+
+jobs:
+  drat-readme:
+    name: Update README
+    runs-on: ubuntu-16.04
+    env:
+      R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+      RSPM: "https://packagemanager.rstudio.com/cran/__linux__/xenial/latest"
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Drat -- update README.md
+        if: success()
+        run: |
+		
+           cd hyperSpec/hySpc.pkgs
+           # grab the portion of the file we want to re-use
+           awk '/^# hySpc\.pkgs$/, /^Packages currently residing here:$/' README.md > README.tmp
+           # append the listing of .tar.gz present, along with a little md formating
+           # ls -lhR  --time-style=long-iso | grep \.tar\.gz$ | awk '{print "\n* "$8, " ("$6")"}' >> README.tmp
+           ls -lhR  --time-style=long-iso | grep \.tar\.gz$ | awk '{print "\n* "$8}' >> README.tmp
+           mv README.tmp README.md
+
+      - name: Commit and push
+        if: success()
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name  "GitHub Actions"
+          git commit README.md -m "Update README" || echo "Nothing to commit"
+          git push origin                         || echo "Nothing to commit"
+
