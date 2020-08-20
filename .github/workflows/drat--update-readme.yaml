@@ -12,6 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: '0' # Allows corect dates in git history
 
       - name: Drat -- update README.md
         if: success()
@@ -19,33 +21,39 @@ jobs:
            # grab the portion of the file we want to re-use
            awk '/^# hySpc\.pkgs$/, /^Packages currently residing here:$/' README.md > README.tmp
 
-           # append the listing of .tar.gz present, along with a little md formating
-           # ls -lhR  --time-style=long-iso | grep \.tar\.gz$ | awk '{print "\n* "$8, " ("$6")"}' >> README.tmp
-
-           # Append the listing of .tar.gz present, along a little formating
-           # (appending to .md that will be parsed and displayed by GH)
-           echo "" >> README.tmp # add blank line
-
-           ls -lhR --time-style=long-iso --ignore="Archive" |\
-             grep \.tar\.gz$                |\
-             sed 's/_/ /g'                  |\
-             sed 's/.tar.gz/ /g'            |\
-             awk '{print "- **"$8"**", $9}' |\
-             sort -r >> README.tmp
+           # =================================================================
+           # Insert the list of packages (current versions)
 
            echo "" >> README.tmp # add blank line
+
+           git ls-files -z .tar.gz '*.tar.gz'          |\
+             xargs -0 -n 1 -I {} -- git log -1 --format="%as {}" {} |\
+             grep \.tar\.gz$                           |\
+             grep Archive -v                           |\
+             sed 's/src\/contrib\///g'                 |\
+             sed 's/_/ /g'                             |\
+             sed 's/.tar.gz/ /g'                       |\
+             awk '{print "- **"$2"**", $3, "_("$1")_"}'|\
+             sort -k2i,2 -k3Vr,3                       >> README.tmp
+
            echo "" >> README.tmp # add blank line
 
-           echo "Previous (archived) versions of the packages residing here:" >> README.tmp
+           # =================================================================
+           # Insert the list of packages (old versions)
+
+           echo "Previous (archived) versions of the packages residing here: " >> README.tmp
            echo "" >> README.tmp # add blank line
 
-           ls src/contrib/Archive/* -lhR --time-style=long-iso |\
-             grep \.tar\.gz$                |\
-             grep -v /Archive/              |\
-             sed 's/_/ /g'                  |\
-             sed 's/.tar.gz/ /g'            |\
-             awk '{print "- **"$8"**", $9}' |\
-             sort -r >> README.tmp
+           # This code should be optimized so that non in "Archive" were not
+           # listed before passing to "xargs"
+           git ls-files -z .tar.gz '*Archive/*.tar.gz' |\
+             xargs -0 -n 1 -I {} -- git log -1 --format="%as {}" {} |\
+             sed 's/src\/contrib\/Archive\///g'        |\
+             sed 's/\// /g'                            |\
+             sed 's/_/ /g'                             |\
+             sed 's/.tar.gz/ /g'                       |\
+             awk '{print "- **"$3"**", $4, "_("$1")_"}'|\
+             sort -k2i,2 -k3Vr,3                       >> README.tmp
 
            # Create a new version of README.md
            mv README.tmp README.md
