@@ -24,8 +24,13 @@ jobs:
            # =================================================================
            # Insert the list of packages (current versions)
 
+           # This code should be optimized so that files in "Archive" dir
+           # were not listed before passing to "xargs"
+
            echo "" >> README.tmp # add blank line
 
+           echo "Package       | Version       | Updated on    " >> README.tmp
+           echo "------------- | ------------- | ------------- " >> README.tmp
            git ls-files -z .tar.gz '*.tar.gz'          |\
              xargs -0 -n 1 -I {} -- git log -1 --format="%as {}" {} |\
              grep \.tar\.gz$                           |\
@@ -33,8 +38,8 @@ jobs:
              sed 's/src\/contrib\///g'                 |\
              sed 's/_/ /g'                             |\
              sed 's/.tar.gz/ /g'                       |\
-             awk '{print "- **"$2"**", $3, "<font size=1>("$1")</font>"}'  |\
-             sort -k2i,2 -k3Vr,3                       >> README.tmp
+             awk '{print $2" | "$3" | "$1 }'           |\
+             sort -t$'|' -k1i,1 -k2Vr,2                >> README.tmp
 
            echo "" >> README.tmp # add blank line
 
@@ -44,16 +49,16 @@ jobs:
            echo "Previous (archived) versions of the packages residing here: " >> README.tmp
            echo "" >> README.tmp # add blank line
 
-           # This code should be optimized so that non in "Archive" were not
-           # listed before passing to "xargs"
+           echo "Package       | Version       | Archived on   " >> README.tmp
+           echo "------------- | ------------- | ------------- " >> README.tmp
            git ls-files -z .tar.gz '*Archive/*.tar.gz' |\
              xargs -0 -n 1 -I {} -- git log -1 --format="%as {}" {} |\
              sed 's/src\/contrib\/Archive\///g'        |\
              sed 's/\// /g'                            |\
              sed 's/_/ /g'                             |\
              sed 's/.tar.gz/ /g'                       |\
-             awk '{print "- **"$3"**", $4, "<font size=1>("$1")</font>"}'  |\
-             sort -k2i,2 -k3Vr,3                       >> README.tmp
+             awk '{print $3" | "$4" | "$1 }'           |\
+             sort -t$'|' -k1i,1 -k2Vr,2                >> README.tmp
 
            # Create a new version of README.md
            mv README.tmp README.md
