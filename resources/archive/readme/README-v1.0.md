@@ -8,7 +8,7 @@ If you want to install a package, simply do the following:
 
 ```r
 install.packages("hySpc.read.txt",
-  repos = c("r-hyperspec.github.io/hySpc.pkgs/", getOption("repos")))
+  repos = c("https://r-hyperspec.github.io/hySpc.pkgs/", getOption("repos")))
 ```
 
 Packages currently residing here:
