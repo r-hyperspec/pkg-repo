@@ -14,6 +14,7 @@ install.packages("hySpc.read.txt",
 Packages currently residing here:
 
 - **hySpc.read.txt** 0.0.0.9001
+- **hySpc.ggplot2** 0.0.0.9000
 - **hyperSpec** 0.100.0
 
 
