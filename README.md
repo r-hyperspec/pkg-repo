@@ -1,10 +1,13 @@
-# hySpc.pkgs
+# Download **`r-hyperspec`** Family Packages
 
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 
-Welcome to `hySpc.pkgs`.  This is a repository holding certain packages in the `r-hyperspec` series (in particular, data-rich packages that are too large to be distributed on CRAN, and also development packages). Developers: instructions about how to administer this repo are in `CONTRIBUTING.md`.
+Welcome!
+This is a repository holding certain packages in the [**`r-hyperspec`**](https://r-hyperspec.github.io/) series (in particular, data-rich packages that are too large to be distributed on CRAN, and also development packages).
 
-If you want to install a package, simply do the following:
+**For developers:** The instructions about how to administer this repo are in [`CONTRIBUTING.md`](https://github.com/r-hyperspec/hySpc.pkgs/blob/gh-pages/CONTRIBUTING.md).
+
+**For users:** If you want to install a package, simply use function `install.packages()` with the additional repository added as shown in this example:
 
 ```r
 repos <- c("https://r-hyperspec.github.io/hySpc.pkgs/", getOption("repos"))
