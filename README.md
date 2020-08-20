@@ -16,9 +16,9 @@ install.packages("hyperSpec", repos = repos)
 
 Packages currently residing here:
 
-- **hyperSpec** 0.100.0 _(2020-08-19)_
+- **hyperSpec** 0.100.0 _(2020-08-20)_
 - **hySpc.ggplot2** 0.0.0.9000 _(2020-08-20)_
-- **hySpc.read.txt** 0.0.0.9001 _(2020-08-19)_
+- **hySpc.read.txt** 0.0.0.9001 _(2020-08-20)_
 
 Previous (archived) versions of the packages residing here: 
 

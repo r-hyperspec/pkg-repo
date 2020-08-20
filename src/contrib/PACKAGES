@@ -8,7 +8,7 @@ Suggests: baseline, bookdown, caTools, colorspace, covr, deldir,
         pls, R.matlab, reshape, reshape2, rgl, rmarkdown, sessioninfo,
         sp, styler, tibble, tripack, vdiffr
 License: GPL (>= 3) + file LICENSE
-MD5sum: 3a31ffe51af2c3cb8950edd570b9c785
+MD5sum: ca2e52ba5da3f8b77b575b9f6004784e
 NeedsCompilation: no
 
 Package: hySpc.ggplot2
@@ -17,7 +17,7 @@ Depends: ggplot2 (>= 2.3.0), hyperSpec
 Imports: hySpc.testthat, lazyeval, methods, rlang
 Suggests: bookdown, covr, knitr, sessioninfo, vdiffr
 License: MIT + file LICENSE
-MD5sum: c1fec278e19f24257f6dd78d29435feb
+MD5sum: 6f77c489ce2042ac87495e685ff20b35
 NeedsCompilation: no
 
 Package: hySpc.read.txt
@@ -26,5 +26,5 @@ Depends: hyperSpec, methods
 Imports: hySpc.testthat, utils
 Suggests: R.matlab, testthat, knitr, covr
 License: MIT + file LICENSE
-MD5sum: 2a578e4dcbf7abbb5851526a4cd9d69c
+MD5sum: 861cffe2f06027ce9493fb5bf56c8883
 NeedsCompilation: no
