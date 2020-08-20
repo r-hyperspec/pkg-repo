@@ -19,7 +19,7 @@ jobs:
         if: success()
         run: |
            # grab the portion of the file we want to re-use
-           awk '/^# Download **`r-hyperspec`** Family Packages$/, /^Packages currently residing here:$/' README.md > README.tmp
+           awk '/^# /, /^Packages currently residing here:$/' README.md > README.tmp
 
            # =================================================================
            # Insert the list of packages (current versions)
