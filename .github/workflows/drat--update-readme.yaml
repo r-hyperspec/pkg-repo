@@ -33,7 +33,7 @@ jobs:
              sed 's/src\/contrib\///g'                 |\
              sed 's/_/ /g'                             |\
              sed 's/.tar.gz/ /g'                       |\
-             awk '{print "- **"$2"**", $3, "_("$1")_"}'|\
+             awk '{print "- **"$2"**", $3, "("$1")"}'  |\
              sort -k2i,2 -k3Vr,3                       >> README.tmp
 
            echo "" >> README.tmp # add blank line
@@ -52,7 +52,7 @@ jobs:
              sed 's/\// /g'                            |\
              sed 's/_/ /g'                             |\
              sed 's/.tar.gz/ /g'                       |\
-             awk '{print "- **"$3"**", $4, "_("$1")_"}'|\
+             awk '{print "- **"$3"**", $4, "("$1")"}'  |\
              sort -k2i,2 -k3Vr,3                       >> README.tmp
 
            # Create a new version of README.md
