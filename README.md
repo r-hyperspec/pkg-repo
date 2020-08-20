@@ -23,4 +23,5 @@ Previous (archived) versions of the packages residing here:
 - **hySpc.read.txt** 0.0.0.9000
 - **hySpc.read.txt** 0.0.0.2000
 - **hySpc.read.txt** 0.0.0.1000
+- **hySpc.ggplot2** 0.0.0.5000
 - **hySpc.ggplot2** 0.0.0.1000
