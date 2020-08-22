@@ -1,16 +1,16 @@
 
-Package       | Version       | Updated on    
-------------- | ------------- | ------------- 
-hyperSpec | 0.100.0 | 2020-08-21
-hySpc.ggplot2 | 0.0.0.9000 | 2020-08-20
-hySpc.read.txt | 0.0.0.9001 | 2020-08-20
+* hyperSpec_0.100.0.tar.gz  (2020-08-22)
 
-Previous (archived) versions of the packages residing here: 
+* hySpc.ggplot2_0.0.0.9000.tar.gz  (2020-08-22)
 
-Package       | Version       | Archived on   
-------------- | ------------- | ------------- 
-hySpc.ggplot2 | 0.0.0.5000 | 2020-08-20
-hySpc.ggplot2 | 0.0.0.1000 | 2020-08-20
-hySpc.read.txt | 0.0.0.9000 | 2020-08-18
-hySpc.read.txt | 0.0.0.2000 | 2020-08-16
-hySpc.read.txt | 0.0.0.1000 | 2020-08-10
+* hySpc.read.txt_0.0.0.9001.tar.gz  (2020-08-22)
+
+* hySpc.ggplot2_0.0.0.1000.tar.gz  (2020-08-22)
+
+* hySpc.ggplot2_0.0.0.5000.tar.gz  (2020-08-22)
+
+* hySpc.read.txt_0.0.0.1000.tar.gz  (2020-08-22)
+
+* hySpc.read.txt_0.0.0.2000.tar.gz  (2020-08-22)
+
+* hySpc.read.txt_0.0.0.9000.tar.gz  (2020-08-22)
