@@ -8,7 +8,7 @@ Suggests: baseline, bookdown, caTools, colorspace, covr, deldir,
         pls, R.matlab, reshape, reshape2, rgl, rmarkdown, sessioninfo,
         sp, styler, tibble, tripack, vdiffr
 License: GPL (>= 3) + file LICENSE
-MD5sum: 2abaef52073d1609c2f985da974d4570
+MD5sum: 15f20b4967e47cbbaba63eea7c9f54bf
 NeedsCompilation: no
 
 Package: hySpc.ggplot2
