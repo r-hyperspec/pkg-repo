@@ -15,6 +15,13 @@ jobs:
         with:
           fetch-depth: '0' # Allows corect dates in git history
 
+      - name: update repo indices # needed if tar balls removed manually
+        run: |
+          install.packages("drat")
+          print(getwd())
+          drat::updateRepo()
+        shell: Rscript {0}
+
       - name: Drat -- update README.md
         if: success()
         run: |
@@ -70,4 +77,3 @@ jobs:
           git config --global user.name  "GitHub Actions"
           git commit README.md -m "Update README" || echo "Nothing to commit"
           git push origin                         || echo "Nothing to commit"
-
