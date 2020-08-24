@@ -56,19 +56,22 @@ jobs:
            # =================================================================
            # Insert the list of packages (old versions)
 
-           echo "Previous (archived) versions of the packages residing here: " >> README.tmp
-           echo "" >> README.tmp # add blank line
+           # Do if any archived .tar.gz file exists
+           if [[ -n $(find "src/contrib" -type f | grep "Archive" | grep '\.tar.gz$') ]]; then
+             echo "Previous (archived) versions of the packages residing here: " >> README.tmp
+             echo "" >> README.tmp # add blank line
 
-           echo "Package       | Version       | Archived on   " >> README.tmp
-           echo "------------- | ------------- | ------------- " >> README.tmp
-           git ls-files -z .tar.gz '*Archive/*.tar.gz' |\
-             xargs -0 -n 1 -I {} -- git log -1 --format="%as {}" {} |\
-             sed 's/src\/contrib\/Archive\///g'        |\
-             sed 's/\// /g'                            |\
-             sed 's/_/ /g'                             |\
-             sed 's/.tar.gz/ /g'                       |\
-             awk '{print $3" | "$4" | "$1 }'           |\
-             sort -t$'|' -k1i,1 -k2Vr,2                >> README.tmp
+             echo "Package       | Version       | Archived on   " >> README.tmp
+             echo "------------- | ------------- | ------------- " >> README.tmp
+             git ls-files -z .tar.gz '*Archive/*.tar.gz' |\
+               xargs -0 -n 1 -I {} -- git log -1 --format="%as {}" {} |\
+               sed 's/src\/contrib\/Archive\///g'        |\
+               sed 's/\// /g'                            |\
+               sed 's/_/ /g'                             |\
+               sed 's/.tar.gz/ /g'                       |\
+               awk '{print $3" | "$4" | "$1 }'           |\
+               sort -t$'|' -k1i,1 -k2Vr,2                >> README.tmp
+           fi
 
            # Create a new version of README.md
            mv README.tmp README.md
