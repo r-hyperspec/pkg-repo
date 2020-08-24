@@ -15,14 +15,16 @@ install.packages("name_of_package_of_interest", repos = repos)
 
 Packages currently residing here:
 
-* hyperSpec_0.0.0.9001.tar.gz  (2020-08-24)
+Package       | Version       | Updated on    
+------------- | ------------- | ------------- 
+hyperSpec | 0.0.0.9001 | 2020-08-24
+hySpc.ggplot2 | 0.0.0.9000 | 2020-08-20
+hySpc.read.txt | 0.0.0.9001 | 2020-08-20
 
-* hySpc.ggplot2_0.0.0.9000.tar.gz  (2020-08-24)
+Previous (archived) versions of the packages residing here: 
 
-* hySpc.read.txt_0.0.0.9001.tar.gz  (2020-08-24)
-
-* hyperSpec_0.0.0.9000.tar.gz  (2020-08-24)
-
-* hySpc.ggplot2_0.0.0.5000.tar.gz  (2020-08-24)
-
-* hySpc.read.txt_0.0.0.9000.tar.gz  (2020-08-24)
+Package       | Version       | Archived on   
+------------- | ------------- | ------------- 
+hyperSpec | 0.0.0.9000 | 2020-08-24
+hySpc.ggplot2 | 0.0.0.5000 | 2020-08-20
+hySpc.read.txt | 0.0.0.9000 | 2020-08-18
