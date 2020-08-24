@@ -19,7 +19,6 @@ jobs:
       - name: update repo indices # needed if tar balls removed manually
         run: |
           install.packages("drat")
-          print(getwd())
           drat::updateRepo(".")
         shell: Rscript {0}
 
