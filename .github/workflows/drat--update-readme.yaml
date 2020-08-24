@@ -14,6 +14,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: '0' # Allows corect dates in git history
+
       - uses: r-lib/actions/setup-r@master
 
       - name: update repo indices # needed if tar balls removed manually
@@ -26,7 +27,7 @@ jobs:
         if: success()
         run: |
            # grab the portion of the file we want to re-use
-           awk '/^# /, /^Packages currently residing here:$/' README.md > README.tmp
+           awk '/^# /, /^<!-- list of packages: start | DO NOT REMOVE THIS LINE -->/' README.md > README.tmp
 
            # =================================================================
            # Insert the list of packages (current versions)
@@ -34,6 +35,8 @@ jobs:
            # This code should be optimized so that files in "Archive" dir
            # were not listed before passing to "xargs"
 
+           echo "" >> README.tmp # add blank line
+           echo "Packages currently residing here:"  >> README.tmp
            echo "" >> README.tmp # add blank line
 
            echo "Package       | Version       | Updated on    " >> README.tmp
