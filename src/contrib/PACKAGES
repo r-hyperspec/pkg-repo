@@ -15,10 +15,10 @@ Package: hySpc.chondro
 Version: 0.0.0.9000
 Depends: R (>= 3.6.0)
 Imports: hyperSpec, hySpc.testthat, lazyeval, methods, rlang
-Suggests: akima, bookdown, covr, ggplotify, ggpubr, knitr,
-        latticeExtra, sessioninfo,
+Suggests: akima, bookdown, covr, ggplotify, ggpubr, hySpc.read.txt,
+        knitr, latticeExtra, sessioninfo,
 License: MIT + file LICENSE
-MD5sum: ca82e7eab879f840f93a77aac04b7b5b
+MD5sum: 88f8def0cd5607451ffea96e0a3e6a18
 NeedsCompilation: no
 
 Package: hySpc.ggplot2
