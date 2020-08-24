@@ -25,6 +25,7 @@ Package       | Version       | Updated on
 ------------- | ------------- | ------------- 
 hyperSpec | 0.100.0 | 2020-08-24
 hySpc.chondro | 0.0.0.9000 | 2020-08-24
+hySpc.dplyr | 0.3.0 | 2020-08-24
 hySpc.ggplot2 | 0.0.0.9000 | 2020-08-24
 hySpc.read.txt | 0.0.0.9001 | 2020-08-24
 
