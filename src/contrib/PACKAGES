@@ -11,6 +11,16 @@ License: GPL (>= 3) + file LICENSE
 MD5sum: e46f379286d7e610e8eca8bb40edf46c
 NeedsCompilation: no
 
+Package: hySpc.chondro
+Version: 0.0.0.9000
+Depends: R (>= 3.6.0)
+Imports: hyperSpec, hySpc.testthat, lazyeval, methods, rlang
+Suggests: akima, bookdown, covr, ggplotify, ggpubr, knitr,
+        latticeExtra, sessioninfo,
+License: MIT + file LICENSE
+MD5sum: f64bfd2647bfff90116321248d760947
+NeedsCompilation: no
+
 Package: hySpc.ggplot2
 Version: 0.0.0.9000
 Depends: ggplot2 (>= 2.3.0), hyperSpec
