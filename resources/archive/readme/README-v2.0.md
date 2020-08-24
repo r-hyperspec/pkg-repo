@@ -18,12 +18,3 @@ You may also use a vector of several package names.
 
 
 <!-- list of packages: start | DO NOT REMOVE THIS LINE -->
-
-Packages currently residing here:
-
-Package       | Version       | Updated on    
-------------- | ------------- | ------------- 
-hyperSpec | 0.0.0.9001 | 2020-08-24
-hySpc.ggplot2 | 0.0.0.9000 | 2020-08-20
-hySpc.read.txt | 0.0.0.9001 | 2020-08-20
-

@@ -1,3 +1,5 @@
+# NOTE: this workfolow should be used with README-v2.0.md
+
 on: push
 
 name: drat-readme
@@ -15,13 +17,13 @@ jobs:
         with:
           fetch-depth: '0' # Allows corect dates in git history
 
-      - uses: r-lib/actions/setup-r@master
-
-      - name: update repo indices # needed if tar balls removed manually
-        run: |
-          install.packages("drat")
-          drat::updateRepo(".")
-        shell: Rscript {0}
+      # - uses: r-lib/actions/setup-r@master
+      #
+      # - name: update repo indices # needed if tar balls removed manually
+      #   run: |
+      #     install.packages("drat")
+      #     drat::updateRepo(".")
+      #   shell: Rscript {0}
 
       - name: Drat -- update README.md
         if: success()
