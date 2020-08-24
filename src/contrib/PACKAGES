@@ -21,6 +21,15 @@ License: MIT + file LICENSE
 MD5sum: 88f8def0cd5607451ffea96e0a3e6a18
 NeedsCompilation: no
 
+Package: hySpc.dplyr
+Version: 0.3.0
+Depends: hyperSpec (>= 0.99-20200527), dplyr (>= 1.0.0), magrittr
+Imports: testthat, hySpc.testthat, methods, rlang
+Suggests: knitr, dtplyr, rmarkdown, covr
+License: MIT + file LICENSE
+MD5sum: 38b8ebca0b8d6371932cf1ef8c718301
+NeedsCompilation: no
+
 Package: hySpc.ggplot2
 Version: 0.0.0.9000
 Depends: ggplot2 (>= 2.3.0), hyperSpec
