@@ -1,5 +1,5 @@
 Package: hyperSpec
-Version: 0.0.0.9001
+Version: 0.100.0
 Depends: R (>= 3.6.0), lattice, grid, ggplot2 (>= 2.3.0)
 Imports: dplyr, hySpc.testthat, latticeExtra, lazyeval, methods, rlang,
         testthat, utils, xml2
@@ -8,7 +8,7 @@ Suggests: baseline, bookdown, caTools, colorspace, covr, deldir,
         pls, R.matlab, reshape, reshape2, rgl, rmarkdown, sessioninfo,
         sp, styler, tibble, tripack, vdiffr
 License: GPL (>= 3) + file LICENSE
-MD5sum: 88c3594d792269a3eb3dbf881b7e80a1
+MD5sum: 5d916e8d8f1c9a8f1950da47ce90ae2a
 NeedsCompilation: no
 
 Package: hySpc.ggplot2
