@@ -48,3 +48,10 @@ Suggests: bookdown, covr, kableExtra, knitr, pkgdown, R.matlab,
 License: MIT + file LICENSE
 MD5sum: 78146c0fb93570c783a0e0a3c9aa3e54
 NeedsCompilation: no
+
+Package: hySpc.testthat
+Version: 0.2.1.9000
+Depends: testthat
+License: MIT + file LICENSE
+MD5sum: a1a6b7dc9625e20d0bcdb749d97136a8
+NeedsCompilation: no
