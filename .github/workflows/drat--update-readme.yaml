@@ -20,7 +20,7 @@ jobs:
         run: |
           install.packages("drat")
           print(getwd())
-          drat::updateRepo()
+          drat::updateRepo(".")
         shell: Rscript {0}
 
       - name: Drat -- update README.md
