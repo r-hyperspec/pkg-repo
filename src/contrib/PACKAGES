@@ -40,13 +40,13 @@ MD5sum: 9d69b46e8bb19b89e2b734feac7a3cee
 NeedsCompilation: no
 
 Package: hySpc.read.txt
-Version: 0.0.0.9001
+Version: 0.0.0.9002
 Depends: hyperSpec
 Imports: hySpc.testthat, methods, stats, utils
 Suggests: bookdown, covr, kableExtra, knitr, pkgdown, R.matlab,
         sessioninfo, styler, testthat
 License: MIT + file LICENSE
-MD5sum: 78146c0fb93570c783a0e0a3c9aa3e54
+MD5sum: 632586b53ae6f833ddc4b42de661a625
 NeedsCompilation: no
 
 Package: hySpc.testthat
