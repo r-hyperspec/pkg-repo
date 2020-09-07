@@ -23,11 +23,12 @@ NeedsCompilation: no
 
 Package: hySpc.dplyr
 Version: 0.3.0
-Depends: hyperSpec (>= 0.99-20200527), dplyr (>= 1.0.0), magrittr
+Depends: hyperSpec (>= 0.99-20200527), dplyr (>= 1.0.0), hySpc.chondro,
+        magrittr
 Imports: testthat, hySpc.testthat, methods, rlang
 Suggests: knitr, dtplyr, rmarkdown, covr
 License: MIT + file LICENSE
-MD5sum: 38b8ebca0b8d6371932cf1ef8c718301
+MD5sum: 12567521a00a1a58f918fd078312eec8
 NeedsCompilation: no
 
 Package: hySpc.ggplot2
