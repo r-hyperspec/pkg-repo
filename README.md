@@ -23,7 +23,7 @@ Packages currently residing here:
 
 Package       | Version       | Updated on    
 ------------- | ------------- | ------------- 
-hyperSpec | 0.100.0 | 2020-08-31
+hyperSpec | 0.100.0 | 2020-09-07
 hySpc.chondro | 0.0.0.9000 | 2020-08-24
 hySpc.dplyr | 0.3.0 | 2020-08-24
 hySpc.ggplot2 | 0.0.0.9000 | 2020-08-24
