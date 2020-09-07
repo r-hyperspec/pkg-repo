@@ -36,7 +36,7 @@ Depends: ggplot2 (>= 2.3.0), hyperSpec
 Imports: hySpc.testthat, lazyeval, methods, rlang
 Suggests: bookdown, covr, knitr, sessioninfo, vdiffr
 License: MIT + file LICENSE
-MD5sum: 9d69b46e8bb19b89e2b734feac7a3cee
+MD5sum: 01da778e4fb3decc85d52f6a6187aff9
 NeedsCompilation: no
 
 Package: hySpc.read.txt
