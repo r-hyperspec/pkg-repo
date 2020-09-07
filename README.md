@@ -30,7 +30,6 @@ hySpc.ggplot2 | 0.0.0.9000 | 2020-09-07
 hySpc.read.mat | 0.0.0.9000 | 2020-09-07
 hySpc.read.txt | 0.0.0.9002 | 2020-09-07
 hySpc.testthat | 0.2.1.9000 | 2020-09-07
-SKELETON | 0.0.0.9000 | 2020-09-07
 
 Previous (archived) versions of the packages residing here: 
 
