@@ -62,5 +62,5 @@ Depends: hyperSpec
 Imports: hySpc.testthat
 Suggests: knitr, covr
 License: MIT + file LICENSE
-MD5sum: a8e110f32720b1dd634ea4f789f6ef57
+MD5sum: c4db9437e70459db8b6a91e89b2da7b5
 NeedsCompilation: no
