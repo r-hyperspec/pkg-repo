@@ -1,12 +1,10 @@
 Package: hyperSpec
 Version: 0.100.0
 Depends: R (>= 3.6.0), lattice, grid, ggplot2 (>= 2.3.0)
-Imports: dplyr, hySpc.testthat, latticeExtra, lazyeval, methods, rlang,
-        testthat, utils, xml2
-Suggests: baseline, bookdown, caTools, colorspace, covr, deldir,
-        digest, kableExtra, knitr, MASS, matrixStats, mvtnorm, plotrix,
-        pls, R.matlab, reshape, reshape2, rgl, rmarkdown, sessioninfo,
-        sp, styler, tibble, tripack, vdiffr
+Imports: dplyr, hySpc.testthat, latticeExtra, lazyeval, methods, rlang, testthat, utils, xml2
+Suggests: baseline, bookdown, caTools, colorspace, covr, deldir, digest, kableExtra, knitr,
+          MASS, matrixStats, mvtnorm, plotrix, pls, R.matlab, reshape, reshape2, rgl,
+          rmarkdown, sessioninfo, sp, styler, tibble, tripack, vdiffr
 License: GPL (>= 3) + file LICENSE
 MD5sum: 0a69b5163b86186d10a9b5f4f15f2921
 NeedsCompilation: no
@@ -15,16 +13,15 @@ Package: hySpc.chondro
 Version: 0.0.0.9000
 Depends: R (>= 3.6.0)
 Imports: hyperSpec, hySpc.testthat, lazyeval, methods, rlang
-Suggests: akima, bookdown, covr, ggplotify, ggpubr, hySpc.read.txt,
-        knitr, latticeExtra, sessioninfo,
+Suggests: akima, bookdown, covr, ggplotify, ggpubr, hySpc.read.txt, knitr, latticeExtra,
+          sessioninfo,
 License: MIT + file LICENSE
 MD5sum: 898413bd6ff35469d9515f68db1c52ab
 NeedsCompilation: no
 
 Package: hySpc.dplyr
 Version: 0.3.0
-Depends: hyperSpec (>= 0.99-20200527), dplyr (>= 1.0.0), hySpc.chondro,
-        magrittr
+Depends: hyperSpec (>= 0.99-20200527), dplyr (>= 1.0.0), hySpc.chondro, magrittr
 Imports: testthat, hySpc.testthat, methods, rlang
 Suggests: knitr, dtplyr, rmarkdown, covr
 License: MIT + file LICENSE
@@ -53,8 +50,7 @@ Package: hySpc.read.txt
 Version: 0.0.0.9002
 Depends: hyperSpec
 Imports: hySpc.testthat, methods, stats, utils
-Suggests: bookdown, covr, kableExtra, knitr, pkgdown, R.matlab,
-        sessioninfo, styler, testthat
+Suggests: bookdown, covr, kableExtra, knitr, pkgdown, R.matlab, sessioninfo, styler, testthat
 License: MIT + file LICENSE
 MD5sum: bdc8d7851e2bd6f3af2c991fb7e28a43
 NeedsCompilation: no
@@ -64,13 +60,4 @@ Version: 0.2.1.9000
 Depends: testthat
 License: MIT + file LICENSE
 MD5sum: eddb1423a38154b9ea79ec2497f11265
-NeedsCompilation: no
-
-Package: SKELETON
-Version: 0.0.0.9000
-Depends: hyperSpec
-Imports: hySpc.testthat
-Suggests: knitr, covr
-License: MIT + file LICENSE
-MD5sum: c4db9437e70459db8b6a91e89b2da7b5
 NeedsCompilation: no
