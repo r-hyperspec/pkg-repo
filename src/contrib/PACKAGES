@@ -1,27 +1,30 @@
 Package: hyperSpec
 Version: 0.100.0
 Depends: R (>= 3.6.0), lattice, grid, ggplot2 (>= 2.3.0)
-Imports: dplyr, hySpc.testthat, latticeExtra, lazyeval, methods, rlang, testthat, utils, xml2
-Suggests: baseline, bookdown, caTools, colorspace, covr, deldir, digest, kableExtra, knitr,
-          MASS, matrixStats, mvtnorm, plotrix, pls, R.matlab, reshape, reshape2, rgl,
-          rmarkdown, sessioninfo, sp, styler, tibble, tripack, vdiffr
+Imports: dplyr, hySpc.testthat, latticeExtra, lazyeval, methods, rlang,
+        testthat, utils, xml2
+Suggests: baseline, bookdown, caTools, colorspace, covr, deldir,
+        digest, kableExtra, knitr, MASS, matrixStats, mvtnorm, plotrix,
+        pls, R.matlab, reshape, reshape2, rgl, rmarkdown, sessioninfo,
+        sp, styler, tibble, tripack, vdiffr
 License: GPL (>= 3) + file LICENSE
-MD5sum: 0a69b5163b86186d10a9b5f4f15f2921
+MD5sum: f021088c45150100e746f5d5dce7c431
 NeedsCompilation: no
 
 Package: hySpc.chondro
 Version: 0.0.0.9000
 Depends: R (>= 3.6.0)
 Imports: hyperSpec, hySpc.testthat, lazyeval, methods, rlang
-Suggests: akima, bookdown, covr, ggplotify, ggpubr, hySpc.read.txt, knitr, latticeExtra,
-          sessioninfo,
+Suggests: akima, bookdown, covr, ggplotify, ggpubr, hySpc.read.txt,
+        knitr, latticeExtra, sessioninfo,
 License: MIT + file LICENSE
 MD5sum: 898413bd6ff35469d9515f68db1c52ab
 NeedsCompilation: no
 
 Package: hySpc.dplyr
 Version: 0.3.0
-Depends: hyperSpec (>= 0.99-20200527), dplyr (>= 1.0.0), hySpc.chondro, magrittr
+Depends: hyperSpec (>= 0.99-20200527), dplyr (>= 1.0.0), hySpc.chondro,
+        magrittr
 Imports: testthat, hySpc.testthat, methods, rlang
 Suggests: knitr, dtplyr, rmarkdown, covr
 License: MIT + file LICENSE
