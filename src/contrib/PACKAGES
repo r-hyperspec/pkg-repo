@@ -28,7 +28,7 @@ Depends: hyperSpec (>= 0.99-20200527), dplyr (>= 1.0.0), hySpc.chondro,
 Imports: testthat, hySpc.testthat, methods, rlang
 Suggests: knitr, dtplyr, rmarkdown, covr
 License: MIT + file LICENSE
-MD5sum: 12567521a00a1a58f918fd078312eec8
+MD5sum: b01a191f8f1e593922b5f7824520653e
 NeedsCompilation: no
 
 Package: hySpc.ggplot2
