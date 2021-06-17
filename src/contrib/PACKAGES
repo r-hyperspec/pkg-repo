@@ -65,3 +65,12 @@ Depends: testthat
 License: MIT + file LICENSE
 MD5sum: eddb1423a38154b9ea79ec2497f11265
 NeedsCompilation: no
+
+Package: SKELETON
+Version: 0.0.0.9000
+Depends: hyperSpec
+Imports: hySpc.testthat
+Suggests: knitr, covr
+License: MIT + file LICENSE
+MD5sum: 386ab7713924cc33ee1c270689ddfb1d
+NeedsCompilation: no
