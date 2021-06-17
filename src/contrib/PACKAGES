@@ -54,9 +54,9 @@ Version: 0.0.0.9000
 Depends: hyperSpec
 Imports: hySpc.testthat, methods, stats, utils
 Suggests: bookdown, covr, kableExtra, knitr, pkgdown, R.matlab,
-        sessioninfo, styler, testthat
+        sessioninfo, styler, testthat, rmarkdown
 License: MIT + file LICENSE
-MD5sum: a340775ace36986d19309a971738c604
+MD5sum: 89dd54ddee2e9face0ab25308f2e2f74
 NeedsCompilation: no
 
 Package: hySpc.testthat
