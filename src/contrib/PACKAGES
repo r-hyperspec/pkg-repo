@@ -49,6 +49,15 @@ License: MIT + file LICENSE
 MD5sum: 8157be6999c92d06064e41247c15baae
 NeedsCompilation: no
 
+Package: hySpc.read.spe
+Version: 0.0.0.9000
+Depends: hyperSpec
+Imports: hySpc.testthat, testthat, methods, utils, xml2
+Suggests: knitr, covr, rmarkdown
+License: MIT + file LICENSE
+MD5sum: 576f82374b00daf539fd054ff72b202e
+NeedsCompilation: no
+
 Package: hySpc.read.txt
 Version: 0.0.0.9000
 Depends: hyperSpec
