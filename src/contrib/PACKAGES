@@ -78,8 +78,8 @@ NeedsCompilation: no
 Package: SKELETON
 Version: 0.0.0.9000
 Depends: hyperSpec
-Imports: hySpc.testthat
+Imports: hySpc.testthat, testthat, methods, utils, readJDX, dplyr
 Suggests: knitr, covr
 License: MIT + file LICENSE
-MD5sum: 7c71855274f258e78def4ac18d6c1326
+MD5sum: 7b094b75c241039004170f555c2833d8
 NeedsCompilation: no
