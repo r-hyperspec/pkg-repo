@@ -42,11 +42,11 @@ NeedsCompilation: no
 
 Package: hySpc.read.jdx
 Version: 0.0.0.9000
-Depends: hyperSpec
-Imports: hySpc.testthat, testthat, methods, utils, readJDX, dplyr
+Depends: hyperSpec, readJDX
+Imports: hySpc.testthat, testthat, methods, utils, dplyr
 Suggests: knitr, covr
 License: MIT + file LICENSE
-MD5sum: 6c71649c7ae3702a40413c2372b2765a
+MD5sum: 636e522d29957b26a86f33e3fea63bcb
 NeedsCompilation: no
 
 Package: hySpc.read.mat
