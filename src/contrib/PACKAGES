@@ -46,7 +46,7 @@ Depends: hyperSpec
 Imports: hySpc.testthat, testthat, methods, utils, readJDX, dplyr
 Suggests: knitr, covr
 License: MIT + file LICENSE
-MD5sum: 361586b4f310eb303fdc0c43dbd9f98e
+MD5sum: ce418aa50aa6faa35f2545a6a60b3935
 NeedsCompilation: no
 
 Package: hySpc.read.mat
