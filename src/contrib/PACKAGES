@@ -40,6 +40,15 @@ License: MIT + file LICENSE
 MD5sum: 16677a1977b245336f238d7f55983de2
 NeedsCompilation: no
 
+Package: hySpc.read.jdx
+Version: 0.0.0.9000
+Depends: hyperSpec
+Imports: hySpc.testthat, testthat, methods, utils, readJDX, dplyr
+Suggests: knitr, covr
+License: MIT + file LICENSE
+MD5sum: 361586b4f310eb303fdc0c43dbd9f98e
+NeedsCompilation: no
+
 Package: hySpc.read.mat
 Version: 0.0.0.9000
 Depends: hyperSpec
