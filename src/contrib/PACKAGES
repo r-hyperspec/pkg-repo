@@ -61,10 +61,10 @@ NeedsCompilation: no
 Package: hySpc.read.spe
 Version: 0.0.0.9000
 Depends: hyperSpec
-Imports: hySpc.testthat, testthat, methods, utils, xml2
+Imports: hySpc.testthat, testthat, methods, utils, xml2, bookdown
 Suggests: knitr, covr, rmarkdown
 License: MIT + file LICENSE
-MD5sum: 5758456cdefa8d225235ead46320d450
+MD5sum: bf57914bb9b599ad036a945493f4b95d
 NeedsCompilation: no
 
 Package: hySpc.read.txt
