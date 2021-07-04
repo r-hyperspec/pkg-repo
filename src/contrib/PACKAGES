@@ -46,7 +46,7 @@ Depends: hyperSpec, readJDX
 Imports: hySpc.testthat, testthat, methods, utils, dplyr
 Suggests: knitr, covr, markdown, rmarkdown, bookdown, styler
 License: MIT + file LICENSE
-MD5sum: 18c03907a044ae151034be06544647ad
+MD5sum: ec0e5a006ea1879e3ded05fc9a31211d
 NeedsCompilation: no
 
 Package: hySpc.read.mat
