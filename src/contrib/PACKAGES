@@ -35,9 +35,9 @@ Package: hySpc.ggplot2
 Version: 0.0.0.9000
 Depends: ggplot2 (>= 2.3.0), hyperSpec
 Imports: hySpc.testthat, lazyeval, methods, rlang
-Suggests: bookdown, covr, knitr, sessioninfo, vdiffr, rmarkdown
+Suggests: bookdown, covr, knitr, sessioninfo, vdiffr, rmarkdown, styler
 License: MIT + file LICENSE
-MD5sum: 16677a1977b245336f238d7f55983de2
+MD5sum: ebea4085904958ff464ef3ad346d0bf0
 NeedsCompilation: no
 
 Package: hySpc.read.jdx
