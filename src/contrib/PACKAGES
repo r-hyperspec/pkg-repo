@@ -16,9 +16,9 @@ Version: 0.0.0.9000
 Depends: R (>= 3.6.0)
 Imports: hyperSpec, hySpc.testthat, lazyeval, methods, rlang
 Suggests: akima, bookdown, covr, ggplotify, ggpubr, hySpc.read.txt,
-        knitr, latticeExtra, sessioninfo, rmarkdown
+        knitr, latticeExtra, sessioninfo, rmarkdown, styler
 License: MIT + file LICENSE
-MD5sum: cd80271589ade070a075b737c8136573
+MD5sum: b197d6227dada46779f952e537d5036c
 NeedsCompilation: no
 
 Package: hySpc.dplyr
