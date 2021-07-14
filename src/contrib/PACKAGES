@@ -8,7 +8,7 @@ Suggests: baseline, bookdown, caTools, colorspace, covr, deldir,
         pls, R.matlab, reshape, reshape2, rgl, rmarkdown, sessioninfo,
         sp, styler, tibble, tripack, vdiffr
 License: GPL (>= 3) + file LICENSE
-MD5sum: ce101c57daf574273de92b1326a657e1
+MD5sum: 5730b136e4050a00e4ec537d8326e433
 NeedsCompilation: no
 
 Package: hySpc.chondro
@@ -83,13 +83,4 @@ Version: 0.2.1.9000
 Depends: testthat
 License: MIT + file LICENSE
 MD5sum: 55aae690017b6bfcbe9537ee94ec39ed
-NeedsCompilation: no
-
-Package: SKELETON
-Version: 0.0.0.9000
-Depends: hyperSpec
-Imports: hySpc.testthat, testthat, methods, utils, readJDX, dplyr
-Suggests: knitr, covr
-License: MIT + file LICENSE
-MD5sum: 7b094b75c241039004170f555c2833d8
 NeedsCompilation: no
