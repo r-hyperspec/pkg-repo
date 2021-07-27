@@ -29,7 +29,7 @@ hySpc.ggplot2 | 0.0.0.9000 | 2021-07-27
 hySpc.read.jdx | 0.0.0.9000 | 2021-07-27
 hySpc.read.mat | 0.0.0.9000 | 2021-07-27
 hySpc.read.spe | 0.0.0.9000 | 2021-07-27
-hySpc.read.txt | 0.0.0.9000 | 2021-07-22
+hySpc.read.txt | 0.0.0.9000 | 2021-07-27
 hySpc.testthat | 0.2.1.9000 | 2021-07-22
 hyperSpec | 0.100.0.9000 | 2021-07-27
 
