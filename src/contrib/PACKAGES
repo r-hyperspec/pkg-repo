@@ -65,7 +65,7 @@ Depends: hyperSpec
 Imports: hySpc.testthat, testthat, methods, utils, xml2, bookdown
 Suggests: knitr, covr, rmarkdown
 License: MIT + file LICENSE
-MD5sum: 5a1fa0eb4e3fa9733d6eaf36e5693983
+MD5sum: 8d96d9d6a6d758a768cb99921245ab90
 NeedsCompilation: no
 
 Package: hySpc.read.txt
