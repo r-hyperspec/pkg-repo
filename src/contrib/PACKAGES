@@ -6,9 +6,9 @@ Imports: dplyr, hySpc.testthat, latticeExtra, lazyeval, methods, rlang,
 Suggests: baseline, bookdown, caTools, colorspace, covr, deldir,
         digest, kableExtra, knitr, MASS, matrixStats, mvtnorm, plotrix,
         pls, R.matlab, reshape, reshape2, rgl, rmarkdown, sessioninfo,
-        sp, styler, tibble, tripack, vdiffr
+        sp, styler, tibble, tripack, vdiffr (>= 1.0.0)
 License: GPL (>= 3) + file LICENSE
-MD5sum: 4ad3a8651ab3deca19e5a17109e02d74
+MD5sum: 0be84486ef88ac84812695af21a13af7
 NeedsCompilation: no
 
 Package: hySpc.chondro
