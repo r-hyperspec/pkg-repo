@@ -43,10 +43,10 @@ NeedsCompilation: no
 Package: hySpc.read.jdx
 Version: 0.0.0.9000
 Depends: hyperSpec, readJDX
-Imports: hySpc.testthat, testthat, methods, utils, dplyr
-Suggests: knitr, covr, markdown, rmarkdown, bookdown, styler
+Imports: hySpc.testthat, testthat, methods, utils
+Suggests: covr
 License: MIT + file LICENSE
-MD5sum: f8789e02d64378d4fdb959bd93d3a9df
+MD5sum: ca3468188ad9859c79f94f9c147f07fb
 NeedsCompilation: no
 
 Package: hySpc.read.mat
