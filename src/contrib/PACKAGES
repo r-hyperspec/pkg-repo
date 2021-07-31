@@ -8,7 +8,7 @@ Suggests: baseline, bookdown, caTools, colorspace, covr, deldir,
         pls, R.matlab, reshape, reshape2, rgl, rmarkdown, sessioninfo,
         sp, styler, tibble, tripack, vdiffr (>= 1.0.0)
 License: GPL (>= 3) + file LICENSE
-MD5sum: 8c061a3e00e1332cf1cb32546ab25f82
+MD5sum: b83f558ed72e73b52babab358e310e7a
 NeedsCompilation: no
 
 Package: hySpc.chondro
