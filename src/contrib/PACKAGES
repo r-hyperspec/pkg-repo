@@ -79,12 +79,12 @@ NeedsCompilation: no
 
 Package: hySpc.read.txt
 Version: 0.0.0.9000
-Depends: hyperSpec
+Depends: hyperSpec (>= 0.100.0.9001)
 Imports: hySpc.testthat, methods, stats, utils
 Suggests: bookdown, covr, kableExtra, knitr, pkgdown, R.matlab,
         sessioninfo, styler, testthat, rmarkdown
 License: MIT + file LICENSE
-MD5sum: e32a268f6fa473ce39d11dab081b58f0
+MD5sum: 2f185ff5f733d800482807f3e2bec9f4
 NeedsCompilation: no
 
 Package: hySpc.testthat
