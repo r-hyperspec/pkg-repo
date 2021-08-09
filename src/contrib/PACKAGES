@@ -74,7 +74,7 @@ Depends: hyperSpec
 Imports: hySpc.testthat, testthat, methods, xml2
 Suggests: covr, vdiffr (>= 1.0.0)
 License: MIT + file LICENSE
-MD5sum: 0b3f4c065afbdd87817e7bc58cb6fcce
+MD5sum: 590802b78c8b1a9d69c608630bb8109d
 NeedsCompilation: no
 
 Package: hySpc.read.txt
