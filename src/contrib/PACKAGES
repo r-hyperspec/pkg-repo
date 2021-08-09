@@ -71,10 +71,10 @@ NeedsCompilation: no
 Package: hySpc.read.spe
 Version: 0.0.0.9000
 Depends: hyperSpec
-Imports: hySpc.testthat, testthat (>= 3.0.0), methods, xml2
-Suggests: covr, vdiffr (>= 1.0.0)
+Imports: testthat (>= 3.0.0), methods, xml2
+Suggests: covr, roxut, vdiffr (>= 1.0.0)
 License: MIT + file LICENSE
-MD5sum: 31523979656fe02fb0467857dd883456
+MD5sum: 0dde1c0dadf4f53b84bd69a20af26973
 NeedsCompilation: no
 
 Package: hySpc.read.txt
