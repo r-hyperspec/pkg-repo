@@ -42,11 +42,11 @@ NeedsCompilation: no
 
 Package: hySpc.read.jdx
 Version: 0.0.0.9000
-Depends: hyperSpec, readJDX
+Depends: hyperSpec (>= 0.100.0), readJDX
 Imports: hySpc.testthat, testthat (>= 3.0.0), methods, utils
 Suggests: covr, roxut
 License: MIT + file LICENSE
-MD5sum: 855d052491bde4542ea566ed892b7a83
+MD5sum: 8780476074349ef11991210cd9018b4a
 NeedsCompilation: no
 
 Package: hySpc.read.mat
