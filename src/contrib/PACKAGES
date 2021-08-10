@@ -84,7 +84,7 @@ Imports: hySpc.testthat, methods, stats, utils
 Suggests: bookdown, covr, kableExtra, knitr, pkgdown, R.matlab,
         sessioninfo, styler, testthat (>= 3.0.0), rmarkdown
 License: MIT + file LICENSE
-MD5sum: 3e2650198270a8bce9b7889624d4e57a
+MD5sum: 69304d09b8ab5b6fd6255bcc2740f913
 NeedsCompilation: no
 
 Package: hySpc.testthat
