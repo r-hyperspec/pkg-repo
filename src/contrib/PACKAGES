@@ -42,12 +42,12 @@ MD5sum: fac225d366b0a21d059a06d094c56ec2
 NeedsCompilation: no
 
 Package: hySpc.read.jdx
-Version: 0.0.0.9000
+Version: 1.0.0.0
 Depends: hyperSpec (>= 0.100.0), readJDX
-Imports: testthat (>= 3.0.0), methods, utils
-Suggests: covr, roxut
+Imports: testthat (>= 3.0.0), methods, utils, roxut
+Suggests: covr
 License: MIT + file LICENSE
-MD5sum: e1710d633e3536a5cd30dcd58f8505bf
+MD5sum: 852ba897d116c6e2835edcba76f4c959
 NeedsCompilation: no
 
 Package: hySpc.read.mat
