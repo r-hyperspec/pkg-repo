@@ -26,7 +26,7 @@ Package       | Version       | Updated on
 hySpc.chondro | 0.0.0.9000 | 2021-07-30
 hySpc.dplyr | 0.3.0 | 2021-08-04
 hySpc.ggplot2 | 0.0.0.9000 | 2021-08-11
-hySpc.read.jdx | 0.0.0.9000 | 2021-08-09
+hySpc.read.jdx | 1.0.0.0 | 2021-08-13
 hySpc.read.mat | 0.0.0.9000 | 2021-07-30
 hySpc.read.spc | 0.0.0.9000 | 2021-08-12
 hySpc.read.spe | 0.0.0.9000 | 2021-08-09
@@ -38,4 +38,5 @@ Previous (archived) versions of the packages residing here:
 
 Package       | Version       | Archived on   
 ------------- | ------------- | ------------- 
+hySpc.read.jdx | 0.0.0.9000 | 2021-08-13
 hyperSpec | 0.100.0.9000 | 2021-08-03
