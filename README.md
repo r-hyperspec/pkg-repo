@@ -23,7 +23,7 @@ Packages currently residing here:
 
 Package       | Version       | Updated on    
 ------------- | ------------- | ------------- 
-hySpc.chondro | 0.0.0.9000 | 2021-07-30
+hySpc.chondro | 0.0.0.9000 | 2021-11-16
 hySpc.dplyr | 0.3.0 | 2021-11-16
 hySpc.ggplot2 | 0.0.0.9000 | 2021-11-16
 hySpc.read.jdx | 1.0.0.0 | 2021-11-16
