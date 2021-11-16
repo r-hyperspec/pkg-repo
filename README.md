@@ -31,7 +31,7 @@ hySpc.read.mat | 0.0.0.9000 | 2021-08-21
 hySpc.read.spc | 0.0.0.9000 | 2021-11-16
 hySpc.read.spe | 0.0.0.9000 | 2021-08-21
 hySpc.read.txt | 0.0.0.9000 | 2021-08-21
-hySpc.testthat | 0.2.1.9000 | 2021-07-28
+hySpc.testthat | 0.2.1.9000 | 2021-11-16
 hyperSpec | 0.200.0.9000 | 2021-11-16
 
 Previous (archived) versions of the packages residing here: 
