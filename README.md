@@ -23,7 +23,7 @@ Packages currently residing here:
 
 Package       | Version       | Updated on    
 ------------- | ------------- | ------------- 
-SKELETON | 0.0.0.9000 | 2021-11-29
+SKELETON | 0.0.0.9000 | 2021-11-30
 hySpc.chondro | 0.0.0.9000 | 2021-11-30
 hySpc.dplyr | 0.3.0 | 2021-11-30
 hySpc.ggplot2 | 0.0.0.9000 | 2021-11-30
