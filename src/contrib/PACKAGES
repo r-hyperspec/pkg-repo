@@ -41,6 +41,15 @@ License: MIT + file LICENSE
 MD5sum: 1af2c041b6fe626730640b187a008f6e
 NeedsCompilation: no
 
+Package: hySpc.read.ENVI
+Version: 0.0.0.9000
+Depends: hyperSpec
+Imports: hySpc.testthat, testthat, methods, utils, bookdown
+Suggests: knitr, covr, rmarkdown, styler
+License: GPL (>= 3)
+MD5sum: b07f268ef8e5294ba60a7239cf92d3f0
+NeedsCompilation: no
+
 Package: hySpc.read.jdx
 Version: 1.0.0.0
 Depends: hyperSpec (>= 0.100.0), readJDX
