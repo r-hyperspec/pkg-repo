@@ -108,7 +108,7 @@ Package: SKELETON
 Version: 0.0.0.9000
 Depends: hyperSpec
 Imports: hySpc.testthat
-Suggests: knitr, covr
+Suggests: knitr, covr, rmarkdown
 License: MIT + file LICENSE
-MD5sum: 8c77804cca125da5f3a5daa13c0cc936
+MD5sum: f8cdfc7ed3f17951829f97af2cb2b07d
 NeedsCompilation: no
