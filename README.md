@@ -29,7 +29,7 @@ hySpc.dplyr | 0.3.0 | 2021-12-01
 hySpc.ggplot2 | 0.0.0.9000 | 2021-12-01
 hySpc.read.ENVI | 0.0.0.9000 | 2021-12-01
 hySpc.read.jdx | 1.0.0.0 | 2021-12-01
-hySpc.read.mat | 0.0.0.9000 | 2021-12-01
+hySpc.read.mat | 0.0.0.9000 | 2021-12-14
 hySpc.read.spc | 0.0.0.9000 | 2021-12-01
 hySpc.read.spe | 0.0.0.9000 | 2021-12-01
 hySpc.read.txt | 0.0.0.9000 | 2021-12-01
