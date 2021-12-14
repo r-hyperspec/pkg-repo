@@ -34,7 +34,7 @@ hySpc.read.spc | 0.0.0.9000 | 2021-12-01
 hySpc.read.spe | 0.0.0.9000 | 2021-12-01
 hySpc.read.txt | 0.0.0.9000 | 2021-12-01
 hySpc.testthat | 0.2.1.9000 | 2021-12-01
-hyperSpec | 0.200.0.9000 | 2021-12-13
+hyperSpec | 0.200.0.9000 | 2021-12-14
 
 Previous (archived) versions of the packages residing here: 
 
