@@ -70,12 +70,12 @@ MD5sum: 01820d68877193871b4d078fb82e0de6
 NeedsCompilation: no
 
 Package: hySpc.read.spc
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Depends: hyperSpec (>= 0.100.0.9000)
 Imports: hySpc.testthat, utils, methods,
 Suggests: knitr, covr, rmarkdown, qpdf, bookdown
 License: MIT + file LICENSE
-MD5sum: 7e9c80a4bed97fc7593907237e6264d8
+MD5sum: 8c102b3cc02ce81b8403a71e8151ff19
 NeedsCompilation: no
 
 Package: hySpc.read.spe
