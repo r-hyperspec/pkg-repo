@@ -3,12 +3,12 @@ Version: 0.200.0.9000
 Depends: R (>= 3.6.0), lattice, grid, ggplot2 (>= 2.3.0)
 Imports: dplyr, hySpc.testthat, latticeExtra (>= 0.6-30), lazyeval,
         methods, rlang, utils, xml2
-Suggests: baseline, bookdown, caTools, colorspace, covr, deldir,
-        digest, kableExtra, knitr, MASS, matrixStats, mvtnorm, plotrix,
-        pls, R.matlab, reshape, reshape2, rgl, rmarkdown, sessioninfo,
-        sp, styler, tibble, vdiffr (>= 1.0.0)
+Suggests: baseline, bookdown, caTools, colorspace, covr, digest,
+        kableExtra, knitr, MASS, matrixStats, mvtnorm, plotrix, pls,
+        R.matlab, reshape, reshape2, rgl, rmarkdown, sessioninfo, sp,
+        styler, tibble, vdiffr (>= 1.0.0)
 License: GPL (>= 3) + file LICENSE
-MD5sum: 81e7e39127631f3e2b810b00a25a2497
+MD5sum: 5a53df9fafbf055699fc8ac211b0834c
 NeedsCompilation: no
 
 Package: hySpc.chondro
