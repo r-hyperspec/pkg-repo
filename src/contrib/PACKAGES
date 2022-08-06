@@ -101,7 +101,7 @@ Package: hySpc.testthat
 Version: 0.2.1.9000
 Depends: testthat
 License: MIT + file LICENSE
-MD5sum: dd6df87c7445bc3cff2808dff2a80a7e
+MD5sum: 4b0105cbba5727d90e8cba0316a1f263
 NeedsCompilation: no
 
 Package: SKELETON
