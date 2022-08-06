@@ -38,7 +38,7 @@ Imports: hySpc.testthat, lazyeval, methods, rlang
 Suggests: bookdown, covr, knitr, sessioninfo, testthat (>= 3.0.0),
         vdiffr, rmarkdown, styler
 License: MIT + file LICENSE
-MD5sum: 05751d46b674ac7c844f9d38da33b6e8
+MD5sum: ace1becf69ee57ffa0d985d983323b48
 NeedsCompilation: no
 
 Package: hySpc.read.ENVI
