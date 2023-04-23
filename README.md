@@ -30,7 +30,7 @@ hySpc.read.ENVI  | 0.0.0.9000   | 2023-04-23
 hySpc.read.jdx   | 1.0.0.0      | 2023-04-23
 hySpc.read.mat   | 0.0.0.9000   | 2023-04-23
 hySpc.read.spc   | 0.0.0.9001   | 2022-08-09
-hySpc.read.spe   | 0.0.0.9000   | 2022-08-06
+hySpc.read.spe   | 0.0.0.9000   | 2023-04-23
 hySpc.read.txt   | 0.0.0.9000   | 2023-04-23
 hySpc.testthat   | 0.2.1.9000   | 2023-04-23
 hyperSpec        | 0.200.0.9000 | 2022-08-07
@@ -44,4 +44,4 @@ hySpc.read.spc   | 0.0.0.9000   | 2022-07-15
 hyperSpec        | 0.100.0.9001 | 2021-08-21
 hyperSpec        | 0.100.0.9000 | 2021-08-03
 
-<p align="right"> 2023-04-23 17:48:50 UTC </p>
+<p align="right"> 2023-04-23 17:54:36 UTC </p>
