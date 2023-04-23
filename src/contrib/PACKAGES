@@ -18,7 +18,7 @@ Imports: hyperSpec, hySpc.testthat, lazyeval, methods, rlang
 Suggests: akima, bookdown, covr, ggplotify, ggpubr, hySpc.read.txt,
         knitr, latticeExtra, sessioninfo, rmarkdown, styler
 License: MIT + file LICENSE
-MD5sum: 4d43488186f47711f5d9e6eb26a1075b
+MD5sum: 17acb542e171a4ab64f4e67d16c8470d
 NeedsCompilation: no
 
 Package: hySpc.dplyr
