@@ -47,7 +47,7 @@ Depends: hyperSpec
 Imports: hySpc.testthat, testthat, methods, utils, bookdown
 Suggests: knitr, covr, rmarkdown, styler
 License: GPL (>= 3)
-MD5sum: a1dbeea346912c761461e6182c093c42
+MD5sum: 6b82d86ca3703d687bc8c771f2f09e4f
 NeedsCompilation: no
 
 Package: hySpc.read.jdx
