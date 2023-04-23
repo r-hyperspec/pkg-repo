@@ -69,6 +69,9 @@ jobs:
               sort -t$'|' -k1i,1 -k2Vr,2                          >> README.tmp
           fi
 
+          # Add timestamp
+          echo "<p align=\"right\"> $(date +"%Y-%m-%d %T %Z") </p>" >> README.tmp
+
           # Create a new version of README.md
           mv README.tmp README.md
 
