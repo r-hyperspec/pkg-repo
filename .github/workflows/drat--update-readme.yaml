@@ -67,6 +67,8 @@ jobs:
               sed 's/(_|.tar.gz)/ /g' -E                          |\
               awk '{printf "%-16s | %-12s | %s\n", $2, $3, $1}'   |\
               sort -t$'|' -k1i,1 -k2Vr,2                          >> README.tmp
+              
+            echo "" >> README.tmp # add blank line
           fi
 
           # Add timestamp
