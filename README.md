@@ -39,9 +39,10 @@ Previous (archived) versions of the packages residing here:
 
 Package          | Version      | Updated on    
 ---------------- | ------------ | ------------- 
+hySpc.read.jdx   | 1.0.0        | 2023-04-23
 hySpc.read.jdx   | 0.0.0.9000   | 2021-08-13
 hySpc.read.spc   | 0.0.0.9000   | 2022-07-15
 hyperSpec        | 0.100.0.9001 | 2021-08-21
 hyperSpec        | 0.100.0.9000 | 2021-08-03
 
-<p align="right"> 2023-04-23 19:09:53 UTC </p>
+<p align="right"> 2023-04-23 19:12:54 UTC </p>
