@@ -23,11 +23,11 @@ Packages currently residing here:
 
 Package          | Version      | Updated on    
 ---------------- | ------------ | ------------- 
-hySpc.chondro    | 0.0.0.9000   | 2022-07-15
+hySpc.chondro    | 0.0.0.9000   | 2023-04-23
 hySpc.dplyr      | 0.3.0        | 2022-03-27
 hySpc.ggplot2    | 0.0.0.9000   | 2023-04-23
-hySpc.read.ENVI  | 0.0.0.9000   | 2021-12-01
-hySpc.read.jdx   | 1.0.0.0      | 2022-08-06
+hySpc.read.ENVI  | 0.0.0.9000   | 2023-04-23
+hySpc.read.jdx   | 1.0.0.0      | 2023-04-23
 hySpc.read.mat   | 0.0.0.9000   | 2023-04-23
 hySpc.read.spc   | 0.0.0.9001   | 2022-08-09
 hySpc.read.spe   | 0.0.0.9000   | 2022-08-06
@@ -44,4 +44,4 @@ hySpc.read.spc   | 0.0.0.9000   | 2022-07-15
 hyperSpec        | 0.100.0.9001 | 2021-08-21
 hyperSpec        | 0.100.0.9000 | 2021-08-03
 
-<p align="right"> 2023-04-23 17:38:09 UTC </p>
+<p align="right"> 2023-04-23 17:48:50 UTC </p>
