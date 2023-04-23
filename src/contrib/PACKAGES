@@ -56,7 +56,7 @@ Depends: hyperSpec (>= 0.100.0), readJDX
 Imports: testthat (>= 3.0.0), methods, utils, roxut
 Suggests: covr
 License: MIT + file LICENSE
-MD5sum: 354e563aa05c9de140199b647fe1d126
+MD5sum: a06fb11ddae877e8b813b7a545cf6c42
 NeedsCompilation: no
 
 Package: hySpc.read.mat
