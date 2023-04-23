@@ -12,11 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: '0' # Allows corect dates in git history
+          fetch-depth: '0' # Allows correct dates in git history
 
       - uses: r-lib/actions/setup-r@master
 
-      - name: update repo indices # needed if tar balls removed manually
+      - name: update repo indices # Needed if tar balls removed manually
         run: |
           install.packages("drat")
           drat::updateRepo(".")
@@ -25,55 +25,52 @@ jobs:
       - name: Drat -- update README.md
         if: success()
         run: |
-           # grab the portion of the file we want to re-use
-           awk '/^# /, /^<!-- list of packages: start | DO NOT REMOVE THIS LINE -->/' README.md > README.tmp
+          # Grab the portion of the file we want to re-use:
+          # from the beginning to the "last_line" that should be reused
+          last_line='<!-- list of packages: start | DO NOT REMOVE THIS LINE -->'
+          awk '/^# /, /^'"$last_line"'/' README.md > README.tmp
 
-           # =================================================================
-           # Insert the list of packages (current versions)
+          # =================================================================
+          # Insert the list of packages (current versions)
 
-           # This code should be optimized so that files in "Archive" dir
-           # were not listed before passing to "xargs"
+          echo "" >> README.tmp # add blank line
+          echo "Packages currently residing here:"  >> README.tmp
+          echo "" >> README.tmp # add blank line
 
-           echo "" >> README.tmp # add blank line
-           echo "Packages currently residing here:"  >> README.tmp
-           echo "" >> README.tmp # add blank line
+          echo "Package          | Version      | Updated on    " >> README.tmp
+          echo "---------------- | ------------ | ------------- " >> README.tmp
+          git ls-files -z '*.tar.gz'                            |\
+              xargs -0 -I {} -- git log -1 --format="%as {}" {} |\
+              grep \.tar\.gz$                                   |\
+              grep '(Archive|SKELETON)' -vE                     |\
+              sed 's/src\/contrib\///g'                         |\
+              sed 's/_|.tar.gz/ /g' -E                          |\
+              awk '{printf "%-16s | %-12s | %s\n", $2, $3, $1}' |\
+              sort -t$'|' -k1i,1 -k2Vr,2                        >> README.tmp
 
-           echo "Package       | Version       | Updated on    " >> README.tmp
-           echo "------------- | ------------- | ------------- " >> README.tmp
-           git ls-files -z .tar.gz '*.tar.gz'          |\
-             xargs -0 -n 1 -I {} -- git log -1 --format="%as {}" {} |\
-             grep \.tar\.gz$                           |\
-             grep Archive -v                           |\
-             sed 's/src\/contrib\///g'                 |\
-             sed 's/_/ /g'                             |\
-             sed 's/.tar.gz/ /g'                       |\
-             awk '{print $2" | "$3" | "$1 }'           |\
-             sort -t$'|' -k1i,1 -k2Vr,2                >> README.tmp
+          echo "" >> README.tmp # add blank line
 
-           echo "" >> README.tmp # add blank line
+          # =================================================================
+          # Insert the list of packages (old versions)
 
-           # =================================================================
-           # Insert the list of packages (old versions)
+          # Do if any archived .tar.gz file exists
+          if [[ -n $(find "src/contrib" -type f | grep 'Archive/.*\.tar.gz$') ]]
+          then
+            echo "Previous (archived) versions of the packages residing here: " >> README.tmp
+            echo "" >> README.tmp # add blank line
 
-           # Do if any archived .tar.gz file exists
-           if [[ -n $(find "src/contrib" -type f | grep "Archive" | grep '\.tar.gz$') ]]; then
-             echo "Previous (archived) versions of the packages residing here: " >> README.tmp
-             echo "" >> README.tmp # add blank line
+            echo "Package          | Version      | Updated on    " >> README.tmp
+            echo "---------------- | ------------ | ------------- " >> README.tmp
+            git ls-files -z '*Archive/*.tar.gz'                   |\
+              xargs -0 -I {} -- git log -1 --format="%as {}" {}   |\
+              sed 's/src\/contrib\/Archive\/.*\///g'              |\
+              sed 's/(_|.tar.gz)/ /g' -E                          |\
+              awk '{printf "%-16s | %-12s | %s\n", $2, $3, $1}'   |\
+              sort -t$'|' -k1i,1 -k2Vr,2                          >> README.tmp
+          fi
 
-             echo "Package       | Version       | Archived on   " >> README.tmp
-             echo "------------- | ------------- | ------------- " >> README.tmp
-             git ls-files -z .tar.gz '*Archive/*.tar.gz' |\
-               xargs -0 -n 1 -I {} -- git log -1 --format="%as {}" {} |\
-               sed 's/src\/contrib\/Archive\///g'        |\
-               sed 's/\// /g'                            |\
-               sed 's/_/ /g'                             |\
-               sed 's/.tar.gz/ /g'                       |\
-               awk '{print $3" | "$4" | "$1 }'           |\
-               sort -t$'|' -k1i,1 -k2Vr,2                >> README.tmp
-           fi
-
-           # Create a new version of README.md
-           mv README.tmp README.md
+          # Create a new version of README.md
+          mv README.tmp README.md
 
       - name: Commit and push
         if: success()
