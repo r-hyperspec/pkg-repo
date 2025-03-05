@@ -33,7 +33,7 @@ hySpc.read.spc   | 0.0.0.9001   | 2023-10-09
 hySpc.read.spe   | 0.0.0.9000   | 2023-04-23
 hySpc.read.txt   | 0.0.0.9000   | 2023-04-23
 hySpc.testthat   | 0.2.1.9000   | 2023-04-23
-hyperSpec        | 0.200.0.9000 | 2025-01-29
+hyperSpec        | 0.200.0.9000 | 2025-03-05
 
 Previous (archived) versions of the packages residing here: 
 
@@ -45,4 +45,4 @@ hySpc.read.spc   | 0.0.0.9000   | 2022-07-15
 hyperSpec        | 0.100.0.9001 | 2021-08-21
 hyperSpec        | 0.100.0.9000 | 2021-08-03
 
-<p align="right"> 2025-01-29 03:32:33 UTC </p>
+<p align="right"> 2025-03-05 03:44:08 UTC </p>
