@@ -98,10 +98,10 @@ MD5sum: 66db54d85d143a97f6190b5870c56f3d
 NeedsCompilation: no
 
 Package: hySpc.testthat
-Version: 0.2.1.9000
+Version: 0.2.2
 Depends: testthat
 License: MIT + file LICENSE
-MD5sum: 40ec13aec11f3d844ae27430d80c31df
+MD5sum: e817539f9165c2848963c558f56ea9ce
 NeedsCompilation: no
 
 Package: SKELETON
