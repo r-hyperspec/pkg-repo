@@ -8,7 +8,7 @@ Suggests: baseline, bookdown, caTools, colorspace, covr, digest,
         R.matlab, reshape, reshape2, rgl, rmarkdown, sessioninfo, sp,
         styler, tibble, vdiffr (>= 1.0.0)
 License: GPL (>= 3) + file LICENSE
-MD5sum: 6eb675c4c71e4df425f8a3109aded2e5
+MD5sum: 3a980fd80f3f902db7c9541d0cbf303e
 NeedsCompilation: no
 
 Package: hySpc.chondro
@@ -66,7 +66,7 @@ Imports: hySpc.testthat, methods, R.matlab, utils, rmarkdown, bookdown,
         testthat
 Suggests: knitr, covr
 License: MIT + file LICENSE
-MD5sum: 2c6fe776bf65758bada1722ed03d26d9
+MD5sum: d72a928478af72619e3119d4fee10392
 NeedsCompilation: no
 
 Package: hySpc.read.spc
@@ -75,7 +75,7 @@ Depends: hyperSpec (>= 0.100.0.9000)
 Imports: hySpc.testthat, utils, methods,
 Suggests: knitr, covr, rmarkdown, qpdf, bookdown
 License: MIT + file LICENSE
-MD5sum: 171cc0ffc863c9b478d02c604c349513
+MD5sum: 3a347bf119ecc5070488cb3e77348cce
 NeedsCompilation: no
 
 Package: hySpc.read.spe
@@ -84,7 +84,7 @@ Depends: hyperSpec (>= 0.100.0)
 Imports: methods, xml2
 Suggests: covr, roxut, testthat (>= 3.0.0), vdiffr (>= 1.0.0)
 License: MIT + file LICENSE
-MD5sum: aebff2cce6e81df8af84f9e55cb2654f
+MD5sum: eea93393a912a691a840628f4b80be18
 NeedsCompilation: no
 
 Package: hySpc.read.txt
@@ -94,14 +94,14 @@ Imports: hySpc.testthat, methods, stats, utils
 Suggests: bookdown, covr, kableExtra, knitr, pkgdown, R.matlab,
         sessioninfo, styler, testthat (>= 3.0.0), rmarkdown
 License: MIT + file LICENSE
-MD5sum: 66db54d85d143a97f6190b5870c56f3d
+MD5sum: 0dc386cd86e717977fdac9457202a958
 NeedsCompilation: no
 
 Package: hySpc.testthat
-Version: 0.2.1.9000
+Version: 0.2.2
 Depends: testthat
 License: MIT + file LICENSE
-MD5sum: 40ec13aec11f3d844ae27430d80c31df
+MD5sum: e817539f9165c2848963c558f56ea9ce
 NeedsCompilation: no
 
 Package: SKELETON
@@ -110,5 +110,5 @@ Depends: hyperSpec
 Imports: hySpc.testthat
 Suggests: knitr, covr, rmarkdown
 License: MIT + file LICENSE
-MD5sum: 8c8edba0804e7e6f63628b61b7534dca
+MD5sum: a9dfc23cf1a7d5567dd5bd9f3bfc74b7
 NeedsCompilation: no
