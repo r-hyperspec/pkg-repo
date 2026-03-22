@@ -28,10 +28,10 @@ hySpc.dplyr      | 0.3.0        | 2022-03-27
 hySpc.ggplot2    | 0.0.0.9000   | 2023-04-23
 hySpc.read.ENVI  | 0.0.0.9000   | 2023-07-18
 hySpc.read.jdx   | 1.0.0.0      | 2023-04-23
-hySpc.read.mat   | 0.0.0.9000   | 2023-04-23
+hySpc.read.mat   | 0.0.0.9000   | 2026-03-22
 hySpc.read.spc   | 0.0.0.9001   | 2023-10-09
-hySpc.read.spe   | 0.0.0.9000   | 2023-04-23
-hySpc.read.txt   | 0.0.0.9000   | 2023-04-23
+hySpc.read.spe   | 0.0.0.9000   | 2026-03-22
+hySpc.read.txt   | 0.0.0.9000   | 2026-03-22
 hySpc.testthat   | 0.2.2        | 2026-01-28
 hyperSpec        | 0.200.0.9000 | 2025-05-07
 
@@ -39,11 +39,11 @@ Previous (archived) versions of the packages residing here:
 
 Package          | Version      | Updated on    
 ---------------- | ------------ | ------------- 
-hySpc.read.jdx   | 1.0.0        | 2023-04-23
+hySpc.read.jdx   | 1.0.0        | 2026-03-22
 hySpc.read.jdx   | 0.0.0.9000   | 2021-08-13
 hySpc.read.spc   | 0.0.0.9000   | 2022-07-15
 hySpc.testthat   | 0.2.1.9000   | 2026-01-28
 hyperSpec        | 0.100.0.9001 | 2021-08-21
 hyperSpec        | 0.100.0.9000 | 2021-08-03
 
-<p align="right"> 2026-01-28 09:50:11 UTC </p>
+<p align="right"> 2026-03-22 15:38:43 UTC </p>
