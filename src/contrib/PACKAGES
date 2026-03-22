@@ -110,5 +110,5 @@ Depends: hyperSpec
 Imports: hySpc.testthat
 Suggests: knitr, covr, rmarkdown
 License: MIT + file LICENSE
-MD5sum: a9dfc23cf1a7d5567dd5bd9f3bfc74b7
+MD5sum: f654fe8bee9f0eee71ad3900cf681486
 NeedsCompilation: no
