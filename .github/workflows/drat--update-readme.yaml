@@ -1,4 +1,6 @@
-on: push
+on:
+  workflow_dispatch:
+  push:
 
 name: drat-readme
 
@@ -6,11 +8,16 @@ jobs:
   drat-readme:
     name: Update README
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
     env:
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: '0' # Allows correct dates in git history
 
