@@ -93,7 +93,7 @@ Depends: hyperSpec (>= 0.100.0)
 Imports: methods, xml2
 Suggests: covr, roxut, testthat (>= 3.0.0), vdiffr (>= 1.0.0)
 License: MIT + file LICENSE
-MD5sum: eb547e77cb6edf89d61fc647c9c66a3a
+MD5sum: 10d221d0a4016d039a5ac95139054135
 NeedsCompilation: no
 
 Package: hySpc.read.txt
