@@ -44,10 +44,10 @@ NeedsCompilation: no
 Package: hySpc.hpc
 Version: 0.0.0.9000
 Depends: hyperSpec, methods, R (>= 4.2)
-Imports: hySpc.testthat
+Imports: hySpc.testthat, Matrix
 Suggests: knitr, covr, rmarkdown, testthat (>= 3.0.0)
 License: MIT + file LICENSE
-MD5sum: 5bf2c82fec16f0d02d3acd324703642c
+MD5sum: 4b75a8e460602e395fc5d4e81f6c75e1
 NeedsCompilation: yes
 
 Package: hySpc.read.ENVI
