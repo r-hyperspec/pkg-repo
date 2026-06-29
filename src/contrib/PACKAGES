@@ -75,7 +75,7 @@ Imports: hySpc.testthat, methods, R.matlab, utils, rmarkdown, bookdown,
         testthat
 Suggests: knitr, covr
 License: MIT + file LICENSE
-MD5sum: 63c7581655955db113291c927ff49a97
+MD5sum: 9f00f3e05c9d9e47143737903c3cc707
 NeedsCompilation: no
 
 Package: hySpc.read.spc
