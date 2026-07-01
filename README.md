@@ -47,4 +47,4 @@ hySpc.testthat   | 0.2.1.9000   | 2026-01-28
 hyperSpec        | 0.100.0.9001 | 2021-08-21
 hyperSpec        | 0.100.0.9000 | 2021-08-03
 
-<p align="right"> 2026-07-01 17:49:50 UTC </p>
+<p align="right"> 2026-07-01 18:02:24 UTC </p>
