@@ -47,7 +47,7 @@ Depends: hyperSpec, methods, R (>= 4.2)
 Imports: hySpc.testthat, Matrix
 Suggests: knitr, covr, rmarkdown, testthat (>= 3.0.0)
 License: MIT + file LICENSE
-MD5sum: a8ba851182f8b6a8f2cd4abd70145169
+MD5sum: 69ac31e530d5179ae513ca75649f91c5
 NeedsCompilation: yes
 
 Package: hySpc.read.ENVI
